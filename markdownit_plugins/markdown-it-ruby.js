@@ -1,4 +1,5 @@
-// This code is essentially the same as https://github.com/catonif/markdown-it-ruby/blob/9a4ee11115d0019055ff67dcff024b5483e7f43f/index.js
+// This code is essentially the same as https://github.com/catonif/markdown-it-ruby/blob/9a4ee11115d0019055ff67dcff024b5483e7f43f/index.js.
+// <rp>(</rp> has been added.
 
 const ddmd_ruby = (state, silent) => {
 

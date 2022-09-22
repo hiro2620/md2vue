@@ -11,7 +11,7 @@ export default {
   head: {
     title: 'md2vue',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'ja'
     },
     meta: [
       { charset: 'utf-8' },

@@ -10,4 +10,4 @@ text next paragraph
 *斜体*
 ~~打ち消し~~
 {漢字:かんじ}
-![池](img/terminal.png)
+![ターミナル](img/terminal.png)

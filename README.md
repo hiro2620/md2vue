@@ -1,5 +1,25 @@
 # md2vue
 
+Nuxtに`.md`ファイルを取り込みボイラープレートです。
+サーバーサイドでレンダリングされる時に、`.md`ファイルが静的なhtmlに変換されます。
+
+## やったこと
+- [@nuxtjs/markdownit](https://github.com/nuxt-community/markdownit-module)で`.md`ファイルをhtmlに変換した。
+- [HiroshiOkada/markdown-it-class](https://github.com/HiroshiOkada/markdown-it-class)で、生成されたhtmlの要素にクラスを追加できるようにした。
+- `.vue`ファイルからローカルに保存してある`.md`ファイルにアクセスできるようにするプラグインを作成した。
+- markdownitのプラグインを作成し、ルビをふれるようにした。
+- ルビの表示/非表示を`props`で切り替えられるようにした。
+
+## やっていないこと
+- 画像最適化
+- YAML Front-matterへの対応
+
+## 注意
+- SPAモードではマークダウンファイルは読み込まれません。
+- SSRモードでも動作しますが、SSGモードで使用することを想定しています。
+- ふりがなの表示・非表示は、CSSで行なっています。
+
+
 ## Build Setup
 
 ```bash
