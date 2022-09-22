@@ -71,8 +71,12 @@ const ddmd_ruby = (state, silent) => {
         state.tokens.push(t);
       });
 
+      token = state.push('rp_open', 'rp', 1)
+      token = state.push('text', '', 0)
+      token.content = '('
+      token = state.push('rp_close', 'rp', -1)
 
-      _ = state.push('rt_open', 'rt', 1);
+      token = state.push('rt_open', 'rt', 1);
 
       state.md.inline.parse(
         rubyArray[idx],
@@ -102,6 +106,11 @@ const ddmd_ruby = (state, silent) => {
       state.tokens.push(t);
     });
 
+    token = state.push('rp_open', 'rp', 1)
+    token = state.push('text', '', 0)
+    token.content = '('
+    token = state.push('rp_close', 'rp', -1)
+
     token = state.push('rt_open', 'rt', 1);
 
     state.md.inline.parse(
@@ -118,6 +127,11 @@ const ddmd_ruby = (state, silent) => {
     token = state.push('rt_close', 'rt', -1);
 
   }
+
+  token = state.push('rp_open', 'rp', 1)
+  token = state.push('text', '', 0)
+  token.content = ')'
+  token = state.push('rp_close', 'rp', -1)
 
   token = state.push('ruby_close', 'ruby', -1);
   token.markup = '}';

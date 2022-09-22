@@ -6,7 +6,7 @@
 
 export default {
   props: {
-    fileName: {
+    fileBaseName: {
       type: String,
       required: true,
     },
@@ -26,7 +26,7 @@ export default {
     },
   },
   async fetch() {
-    this.markdown = await this.$mdFile(this.fileName)
+    this.markdown = await this.$mdFile.retrieve(this.fileBaseName)
   }
 }
 </script>

@@ -1,6 +1,5 @@
 const markdownitClassConfig = { h1: ['text-2xl'], h2: ['text-xl'] }
 
-
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: true,
@@ -31,7 +30,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '@/plugins/mdFiles.server.js'
+    '~/plugins/mdFiles.server.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -59,7 +58,7 @@ export default {
       ['markdown-it-class',
         markdownitClassConfig,
       ],
-      ['@/markdownit_plugins/markdown-it-ruby']
+      ['~/markdownit_plugins/markdown-it-ruby']
     ]
   },
 
