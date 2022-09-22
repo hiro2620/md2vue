@@ -4,21 +4,19 @@
       <h2>ふりがなを表示するか</h2>
       <input type="checkbox" v-model="displayRuby" />
     </section>
-<section>
-  <h2>.mdファイル名の一覧を取得</h2>
-  <MarkdownList></MarkdownList>
-</section>
-
-<section>
-  <h2>hello.mdを表示</h2>
-  <Markdown fileBaseName="hello" :displayRuby="displayRuby"></Markdown>
-</section>
-
+    <section>
+      <h2>.mdファイル名の一覧を取得</h2>
+      <MarkdownList></MarkdownList>
+    </section>
+    <section>
+      <h2>hello.mdを表示</h2>
+      <Markdown fileBaseName="hello" :displayRuby="displayRuby"></Markdown>
+    </section>
     <section>
       <h2>hello2.mdとhello.mdを繋げたものを表示</h2>
       <CombinedMarkdown :fileBaseNames="['hello2', 'hello']" :displayRuby="displayRuby"></CombinedMarkdown>
     </section>
-    </main>
+  </main>
 </template>
 
 <script>
