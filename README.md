@@ -6,9 +6,9 @@ Nuxtに`.md`ファイルを取り込みボイラープレートです。
 ## やったこと
 - [@nuxtjs/markdownit](https://github.com/nuxt-community/markdownit-module)で`.md`ファイルをhtmlに変換した。
 - [HiroshiOkada/markdown-it-class](https://github.com/HiroshiOkada/markdown-it-class)で、生成されたhtmlの要素にクラスを追加できるようにした。
-- `.vue`ファイルからローカルに保存してある`.md`ファイルにアクセスできるようにするプラグインを作成した。
+- `.vue`ファイルからローカル(`~/markdowns`)に保存してある`.md`ファイルにアクセスできるようにするプラグインを作成した。
 - markdownitのプラグインを作成し、ルビをふれるようにした。
-- ルビの表示/非表示を`props`で切り替えられるようにした。
+- ルビの表示/非表示を切り替えられるようにした。
 
 ## やっていないこと
 - 画像最適化
